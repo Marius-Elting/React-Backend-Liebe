@@ -1,0 +1,19 @@
+{
+  "name": "reactbackendaufgabe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \" npm run client\"",
+    "install":"concurrently \"npm i --prefix client\" \" npm i --prefix server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
